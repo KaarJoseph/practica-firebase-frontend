@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <h3>Formulario de contacto</h3>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" [(ngModel)]="contacto.nombre" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="contacto.email" name="email" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" [(ngModel)]="contacto.mensaje" name="message" required></textarea>
+      <button (click)="enviar()" type="button">Enviar</button>
+      <br>
+    </form>
+  </div>
+  

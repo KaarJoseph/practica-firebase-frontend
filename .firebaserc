@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "demo622contactos": {
+      "hosting": {
+        "my-app": [
+          "demo622contactos"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "demo622contactos"
+  }
+}

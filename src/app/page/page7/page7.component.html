@@ -1,0 +1,18 @@
+<h2>Productos</h2>
+<h4>Formulario para pruebas</h4>
+
+<div class="sidebar">
+    <h3>Formulario de productos</h3>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" [(ngModel)]="producto.nombre" name="name" required>
+      <label for="descripcion">Descripcion:</label>
+      <input type="text" id="desc" [(ngModel)]="producto.descripcion" name="desc" required>
+      <label for="double">Precio:</label>
+      <input id="precio" matInput placeholder="$0.00" [(ngModel)]="producto.precio" name="precio" required>
+      <button (click)="enviar()" type="button">Agregar</button>
+      <br>
+      <button (click)="actualizar()" type="button">Modificar</button>
+    </form>
+</div>
+  
