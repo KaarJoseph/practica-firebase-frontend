@@ -22,6 +22,7 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { Page7Component } from './page/page7/page7.component';
 import { Page8Component } from './page/page8/page8.component';
 import { Page3Component } from './page/page3/page3.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { Page3Component } from './page/page3/page3.component';
     MatTableModule, 
     MatSlideToggleModule,
     MatDatepickerModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
   ],

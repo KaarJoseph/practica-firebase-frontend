@@ -21,7 +21,7 @@ export class ContactoService {
   save(contacto: Contacto){
     this.contactos.push(contacto)
     console.log(this.contactos)
-    contacto.uid = this.db.createId()
+    //contacto.uid = this.db.createId()
     this.create(contacto)
   }
 
@@ -35,7 +35,7 @@ export class ContactoService {
   }
 
   create(contacto: Contacto): any {
-    return this.contactosRef.doc(contacto.uid).set({ ...contacto });
+    //return this.contactosRef.doc(contacto.uid).set({ ...contacto });
   }
 
   update(id: string, data: any): Promise<void> {

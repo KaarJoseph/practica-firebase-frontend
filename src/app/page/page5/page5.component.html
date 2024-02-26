@@ -4,14 +4,13 @@
 <div class="sidebar">
     <h3>Formulario de contacto</h3>
     <form>
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" [(ngModel)]="contacto.nombre" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" [(ngModel)]="contacto.email" name="email" required>
-      <label for="message">Mensaje:</label>
-      <textarea id="message" [(ngModel)]="contacto.mensaje" name="message" required></textarea>
+      <label for="name">Cedula:</label>
+      <input type="text" id="name" [(ngModel)]="contacto.cedula" name="cedula" required>
+      <label for="email">Nombre:</label>
+      <input type="email" id="email" [(ngModel)]="contacto.nombre" name="nombre" required>
+      <label for="message">Direccion:</label>
+      <textarea id="message" [(ngModel)]="contacto.direccion" name="direccion" required></textarea>
       <br>
       <button (click)="actualizar()" type="button">Actualizar</button>
     </form>
-  </div>
-  
+</div>
